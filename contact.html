@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button onclick="toggleTheme()" class="theme-btn">🌙</button>
+
+<div class="container">
+    <form id="contactForm" class="contact-form">
+        <h2>Contact Me</h2>
+        <p class="subtitle">Send your message below</p>
+
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="name">
+            <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="email">
+            <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+            <label>Subject</label>
+            <select id="subject">
+                <option value="">Select subject</option>
+                <option>Project Inquiry</option>
+                <option>Collaboration</option>
+                <option>Feedback</option>
+            </select>
+            <small class="error" id="subjectError"></small>
+        </div>
+
+        <div class="form-group">
+            <label>Message</label>
+            <textarea id="message" rows="4"></textarea>
+            <small class="error" id="messageError"></small>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p class="success" id="successMessage"></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
